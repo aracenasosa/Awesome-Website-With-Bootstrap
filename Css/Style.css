@@ -1,0 +1,130 @@
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#header{
+    margin-top: 75px;
+}
+
+#testimonial{
+    background:#ecf0f1;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#contact{
+    background:url(../img/smartphones.png); 
+    margin-bottom: 10px;
+}
+
+textarea{
+    resize: vertical;
+    max-height: 300px;
+    min-height: 100px;
+}
+
+footer{
+    background: #2d3436;
+}
+
+footer div{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #fff;
+    text-decoration: line-through;
+}
+
+#morgan{
+    text-decoration: none;
+}
+
+#morgan:hover{
+    text-decoration: underline;
+}
+
+#freeman{
+    width: 200px;
+    height: 200px;
+}
+
+.postpago{
+    font-size: 17px
+}
+
+.Rd{
+    font-size: 20px
+}
+
+.comentarios {
+	margin: 20px 0;
+}
+
+.form_comentarios textarea {
+	width: 100%;
+	height: 84px;
+	max-width: 100%;
+	min-width: 100%;
+	min-height: 84px;
+	max-height: 300px;
+	padding: 10px;
+	font-family: 'Roboto', sans-serif;
+	line-height: 30px;
+	border: 1px solid #4b65d1;
+	margin-bottom: 20px;
+}
+
+.form_comentarios .btn {
+	background: #4b65d1;
+	font-family: 'Roboto', sans-serif;
+	border-radius:0;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.form_comentarios .btn:hover {
+	box-shadow: 0px 0px 9px rgba(0,0,0,.35);
+}
+
+.media {
+	border-top: 1px solid #bfbfbf;
+	padding-top: 20px;
+}
+
+.media img {
+	margin-right: 20px;
+}
+
+.media .nombre {
+	color: #4b65d1;
+	margin-bottom: 0;
+}
+
+.media .nombre span {
+	font-size: 12px;
+	color: #464646;
+	margin-left: 10px;
+}
+
+.media .comentario {
+	margin-top: 10px;
+}
+
+.media .botones {
+	margin-bottom: 10px;
+}
+
+.media .botones a {
+	color: #acacac;
+	font-size: 14px;
+	margin-left: 20px;
+}
+

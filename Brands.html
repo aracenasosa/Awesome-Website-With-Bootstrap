@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+     <!--Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="Css/Style.css" />
+  </head>
+
+  <body >
+    <!--NAVIGATION-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand ml-auto" href="Index.html">SmartSide <i class="fas fa-sms"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="Index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Index.html">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              <i class="fas fa-shopping-cart"></i> Cart
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--HEADER-->
+    <header id="header">
+      <div class="container mt-5">
+        <div class="row mb-3">
+          <div class="col-4">
+            <div class="form-group">
+              <!--<input type="text" class="form-control control-inline" placeholder="Filter">-->
+              <label for="marca" class="control-inline">Marca</label>
+              <select id="marca" class="form-control">
+                <option value=""> </option>
+                <option value="">Motorola</option>
+                <option value="">Iphone</option>
+                <option value="">Xiaomi</option>
+                <option value="">Huawei</option>
+                <option value="">Samgsum</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label for="Precio" class="control-inline">Precio</label>
+              <select id="Precio" class="form-control" style="margin-bottom: 31px">
+                <option value=""> </option>
+                <option value="">10,000 Hacia arriba</option>
+                <option value="">15,000 para abajo</option>
+                <option value="">15,000 para arriba</option>
+                <option value="">20,000 hacia arriba</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-4">
+                <button class="btn btn-info" style="margin-top: 31px">Filtrar</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <!--Primer Card-->
+          <div class="col-4-lg" style="width:20rem;">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-center">Motorola Moto G5 64Gb</h5>
+                <h5 class="text-center postpago">Postpago desde</h5>
+                <h5 class="text-center Rd"><strong>RD$20,199.15</strong></h5>
+                <h5></h5>
+                <div class="card-text">
+                  <img
+                    src="img/moto_g_5__wh_01.png"
+                    class="card-img-top mb-2"
+                  />
+                </div>
+                <a href="Detalles.Html"
+                  class="btn btn-danger text-white"
+                  style="position:relative; left:70px;"
+                  >Ver Detalles<i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!--Espaciado entre columns-->
+          <div class="mx-4"></div>
+
+          <!--Segundo Card-->
+          <div class="col-4-lg" style="width:20rem;">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-center">Xiaomi Predator 16Gb</h5>
+                <h5 class="text-center postpago">Postpago desde</h5>
+                <h5 class="text-center Rd"><strong>RD$15,150.00</strong></h5>
+                <h5></h5>
+                <div class="card-text">
+                  <img src="img/descarga.jpg" class="card-img-top mb-2" />
+                </div>
+                <a href="Detalles.Html"
+                  class="btn btn-danger text-white"
+                  style="position:relative; left:77px;"
+                  >Ver Detalles<i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!--Espaciado entre columns-->
+          <div class="mx-4"></div>
+
+          <!--Tercer Card-->
+          <div class="col-4-lg" style="width:20rem;">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-center">Iphone 6 XL 128Gb</h5>
+                <h5 class="text-center postpago">Postpago desde</h5>
+                <h5 class="text-center Rd"><strong>RD$50,150.00</strong></h5>
+                <h5></h5>
+                <div class="card-text">
+                  <img
+                    src="img/iphone-6s-screen-repair-watford-700x700.png"
+                    class="card-img-top mb-2"
+                  />
+                </div>
+                <a href="Detalles.Html"
+                  class="btn btn-danger text-white"
+                  style="position:relative; left:77px;"
+                  >Ver Detalles<i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <!--Cuarto Card-->
+          <div class="col-4-lg" style="width:20rem;">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  Samgsum Galaxy Note 4 32Gb
+                </h5>
+                <h5 class="text-center postpago">Postpago desde</h5>
+                <h5 class="text-center Rd"><strong>RD$13,199.15</strong></h5>
+                <h5></h5>
+                <div class="card-text">
+                  <img
+                    src="img/Samsung_Galaxy_Note_4_32GB_16MP_4G_LTE___Wi_Fi_Smartphone_5_7_inch___Pink_5_1.png"
+                    class="card-img-top mb-2"
+                  />
+                </div>
+                <a href="Detalles.Html"
+                  class="btn btn-danger text-white"
+                  style="position:relative; left:77px;"
+                  >Ver Detalles<i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!--Espaciado entre columns-->
+          <div class="mx-4"></div>
+
+          <!--Quinto Card-->
+          <div class="col-4-lg" style="width:20rem;">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-center">HUAWEI Y3 Gb 8</h5>
+                <h5 class="text-center postpago">Postpago desde</h5>
+                <h5 class="text-center Rd"><strong>RD$13,50.15</strong></h5>
+                <h5></h5>
+                <div class="card-text">
+                  <img
+                    src="img/y3-2017-listimage-white_result (1).jpg"
+                    class="card-img-top mb-2"
+                  />
+                </div>
+                <a href="Detalles.Html"
+                  class="btn btn-danger text-white"
+                  style="position:relative; left:77px;"
+                  >Ver Detalles<i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!--Espaciado entre columns-->
+          <div class="mx-4"></div>
+
+          <!--Sexto Card-->
+          <div class="col-4-lg" style="width:20rem;">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-center">Iphone 4 Mini 8Gb</h5>
+                <h5 class="text-center postpago">Postpago desde</h5>
+                <h5 class="text-center Rd"><strong>RD$11,199.15</strong></h5>
+                <h5></h5>
+                <div class="card-text">
+                  <img
+                    src="img/iphone_4-700x700.png"
+                    class="card-img-top mb-2"
+                  />
+                </div>
+                <a href="Detalles.Html"
+                  class="btn btn-danger text-white"
+                  style="position:relative; left:70px;"
+                  >Ver Detalles<i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--Espacio hacia Abajo-->
+    <div style="margin-bottom: 100px;"></div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
