@@ -25,6 +25,11 @@
     />
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="Css/Style.css" />
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <script src="Hide.js"></script>
   </head>
 
   <body >
@@ -72,13 +77,13 @@
             <div class="form-group">
               <!--<input type="text" class="form-control control-inline" placeholder="Filter">-->
               <label for="marca" class="control-inline">Marca</label>
-              <select id="marca" class="form-control">
+              <select id="marca" class="form-control" onchange="filtro()">
                 <option value=""> </option>
-                <option value="">Motorola</option>
-                <option value="">Iphone</option>
-                <option value="">Xiaomi</option>
-                <option value="">Huawei</option>
-                <option value="">Samgsum</option>
+                <option value="Motorola">Motorola</option>
+                <option value="Iphone">Iphone</option>
+                <option value="Xiaomi">Xiaomi</option>
+                <option value="Huawei">Huawei</option>
+                <option value="Samgsum">Samgsum</option>
               </select>
             </div>
           </div>
@@ -94,14 +99,11 @@
               </select>
             </div>
           </div>
-          <div class="col-4">
-                <button class="btn btn-info" style="margin-top: 31px">Filtrar</button>
-          </div>
         </div>
 
         <div class="row">
           <!--Primer Card-->
-          <div class="col-4-lg" style="width:20rem;">
+          <div class="col-4-lg Motorola " style="width:20rem;">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title text-center">Motorola Moto G5 64Gb</h5>
@@ -126,7 +128,7 @@
           <div class="mx-4"></div>
 
           <!--Segundo Card-->
-          <div class="col-4-lg" style="width:20rem;">
+          <div class="col-4-lg Xiaomi" style="width:20rem;">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title text-center">Xiaomi Predator 16Gb</h5>
@@ -148,7 +150,7 @@
           <div class="mx-4"></div>
 
           <!--Tercer Card-->
-          <div class="col-4-lg" style="width:20rem;">
+          <div class="col-4-lg Iphone" style="width:20rem;">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title text-center">Iphone 6 XL 128Gb</h5>
@@ -173,7 +175,7 @@
 
         <div class="row mt-4">
           <!--Cuarto Card-->
-          <div class="col-4-lg" style="width:20rem;">
+          <div class="col-4-lg Samgsum" style="width:20rem;">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title text-center">
@@ -200,7 +202,7 @@
           <div class="mx-4"></div>
 
           <!--Quinto Card-->
-          <div class="col-4-lg" style="width:20rem;">
+          <div class="col-4-lg HUAWEI" style="width:20rem;">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title text-center">HUAWEI Y3 Gb 8</h5>
@@ -225,7 +227,7 @@
           <div class="mx-4"></div>
 
           <!--Sexto Card-->
-          <div class="col-4-lg" style="width:20rem;">
+          <div class="col-4-lg Iphone" style="width:20rem;">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title text-center">Iphone 4 Mini 8Gb</h5>
