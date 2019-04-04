@@ -128,3 +128,13 @@ footer a:hover{
 	margin-left: 20px;
 }
 
+.img-carousel{
+	height: 700px;
+	background: cover;
+	background: no-repeat;
+	background-attachment: fixed;
+	background:red;
+}
+
+
+
