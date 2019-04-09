@@ -49,9 +49,31 @@
                       class="fas fa-user-plus"></i></a>
                 </form>
                 <form class="form-inline my-2 my-lg-0">
-                    <button class="btn btn-success my-2 my-sm-0 btn-lg" type="submit">
-              <i class="fas fa-shopping-cart"></i> Cart
-            </button>
+
+                    <div class="col-1">
+                        <ul>
+                            <li class="submenu">
+                                <img src="img/cart2.png" id="img-carrito">
+                                <div id="carrito">
+
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="btn btn-primary">Vaciar Carrito</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
                 </form>
             </div>
         </div>
@@ -77,7 +99,7 @@
 
             <div class="row">
                 <!--Primer Card-->
-                <div class="col-4-lg Motorola " style="width:20rem;">
+                <div class="col-4-lg Motorola " id="phone" style="width:20rem;">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title text-center">Motorola Moto G5 64Gb</h5>
@@ -87,8 +109,9 @@
                             <div class="card-text">
                                 <img src="img/moto_g_5__wh_01.png" class="card-img-top mb-2" />
                             </div>
-                            <a href="Detalles.Html" class="btn btn-danger text-white" style="position:relative; left:70px;">Ver Detalles<i class="fas fa-shopping-cart"></i
-                ></a>
+                            <a class="btn btn-primary text-white ml-4" id="buy3">Comprar</a>
+                            <a href="Detalles.Html" class="btn btn-danger text-white">Ver Detalles<i class="fas fa-shopping-cart"></i
+                              ></a>
                         </div>
                     </div>
                 </div>
@@ -96,7 +119,7 @@
                 <div class="mx-4"></div>
 
                 <!--Segundo Card-->
-                <div class="col-4-lg Xiaomi" style="width:20rem;">
+                <div class="col-4-lg Xiaomi" id="phone2" style="width:20rem;">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title text-center">Xiaomi Predator 16Gb</h5>
@@ -106,8 +129,9 @@
                             <div class="card-text">
                                 <img src="img/descarga.jpg" class="card-img-top mb-2" />
                             </div>
-                            <a href="Detalles.Html" class="btn btn-danger text-white" style="position:relative; left:77px;">Ver Detalles<i class="fas fa-shopping-cart"></i
-                ></a>
+                            <a class="btn btn-primary text-white ml-4" id="buy3">Comprar</a>
+                            <a href="Detalles.Html" class="btn btn-danger text-white">Ver Detalles<i class="fas fa-shopping-cart"></i
+                              ></a>
                         </div>
                     </div>
                 </div>
@@ -115,7 +139,7 @@
                 <div class="mx-4"></div>
 
                 <!--Tercer Card-->
-                <div class="col-4-lg Iphone Iphone2" style="width:20rem;">
+                <div class="col-4-lg Iphone Iphone2" id="phone3" style="width:20rem;">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title text-center">Iphone 6 XL 128Gb</h5>
@@ -125,8 +149,9 @@
                             <div class="card-text">
                                 <img src="img/iphone-6s-screen-repair-watford-700x700.png" class="card-img-top mb-2" />
                             </div>
-                            <a href="Detalles.Html" class="btn btn-danger text-white" style="position:relative; left:77px;">Ver Detalles<i class="fas fa-shopping-cart"></i
-                ></a>
+                            <a class="btn btn-primary text-white ml-4" id="buy3">Comprar</a>
+                            <a href="Detalles.Html" class="btn btn-danger text-white">Ver Detalles<i class="fas fa-shopping-cart"></i
+                              ></a>
                         </div>
                     </div>
                 </div>
@@ -134,7 +159,7 @@
 
             <div class="row mt-4">
                 <!--Cuarto Card-->
-                <div class="col-4-lg Samgsum" style="width:20rem;">
+                <div class="col-4-lg Samgsum" id="phone4" style="width:20rem;">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title text-center">
@@ -146,8 +171,9 @@
                             <div class="card-text">
                                 <img src="img/Samsung_Galaxy_Note_4_32GB_16MP_4G_LTE___Wi_Fi_Smartphone_5_7_inch___Pink_5_1.png" class="card-img-top mb-2" />
                             </div>
-                            <a href="Detalles.Html" class="btn btn-danger text-white" style="position:relative; left:77px;">Ver Detalles<i class="fas fa-shopping-cart"></i
-                ></a>
+                            <a class="btn btn-primary text-white ml-4" id="buy3">Comprar</a>
+                            <a href="Detalles.Html" class="btn btn-danger text-white">Ver Detalles<i class="fas fa-shopping-cart"></i
+                              ></a>
                         </div>
                     </div>
                 </div>
@@ -155,7 +181,7 @@
                 <div class="mx-4"></div>
 
                 <!--Quinto Card-->
-                <div class="col-4-lg HUAWEI" style="width:20rem;">
+                <div class="col-4-lg HUAWEI" id="phone5" style="width:20rem;">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title text-center">HUAWEI Y3 Gb 8</h5>
@@ -165,8 +191,9 @@
                             <div class="card-text">
                                 <img src="img/y3-2017-listimage-white_result (1).jpg" class="card-img-top mb-2" />
                             </div>
-                            <a href="Detalles.Html" class="btn btn-danger text-white" style="position:relative; left:77px;">Ver Detalles<i class="fas fa-shopping-cart"></i
-                ></a>
+                            <a class="btn btn-primary text-white ml-4" id="buy3">Comprar</a>
+                            <a href="Detalles.Html" class="btn btn-danger text-white">Ver Detalles<i class="fas fa-shopping-cart"></i
+                              ></a>
                         </div>
                     </div>
                 </div>
@@ -174,7 +201,7 @@
                 <div class="mx-4"></div>
 
                 <!--Sexto Card-->
-                <div class="col-4-lg Iphone" style="width:20rem;">
+                <div class="col-4-lg Iphone" id="phone6" style="width:20rem;">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title text-center">Iphone 4 Mini 8Gb</h5>
@@ -184,8 +211,9 @@
                             <div class="card-text">
                                 <img src="img/iphone_4-700x700.png" class="card-img-top mb-2" />
                             </div>
-                            <a href="Detalles.Html" class="btn btn-danger text-white" style="position:relative; left:70px;">Ver Detalles<i class="fas fa-shopping-cart"></i
-                ></a>
+                            <a class="btn btn-primary text-white ml-4" id="buy3">Comprar</a>
+                            <a href="Detalles.Html" class="btn btn-danger text-white">Ver Detalles<i class="fas fa-shopping-cart"></i
+                              ></a>
                         </div>
                     </div>
                 </div>
@@ -269,6 +297,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="Js/Hide.js"></script>
+    <script src="Js/Carrito.js"></script>
 </body>
 
 </html>
