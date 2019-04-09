@@ -2,17 +2,16 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>SmartSide</title>
+    <link rel="shortcut icon" href="Img/smartphone (1).png" type="image/x-icon">
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <!--Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="Css/Style.css" />
 </head>
@@ -22,8 +21,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand ml-auto" href="Index.html">SmartSide <i class="fas fa-sms"></i></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -43,26 +41,48 @@
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0 mx-5">
-                        <a class="btn btn-primary my-2 my-sm-0 mx-2" href="Login.html">Login <i
+                    <a class="btn btn-primary my-2 my-sm-0 mx-2" href="Login.html">Login <i
                                 class="fas fa-sign-in-alt"></i></button>
                         <a class="btn btn-danger my-2 my-sm-0" href="SignUp.html">Sign Up <i
                                 class="fas fa-user-plus"></i></a>
-                    </form>
+                </form>
                 <form class="form-inline my-2 my-lg-0">
-                    <button class="btn btn-success my-2 my-sm-0 btn-lg" type="submit">
-                        <i class="fas fa-shopping-cart"></i> Cart
-                    </button>
+
+                    <div class="col-1">
+                        <ul>
+                            <li class="submenu">
+                                <img src="img/cart2.png" id="img-carrito">
+                                <div id="carrito">
+
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="btn btn-primary">Vaciar Carrito</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
                 </form>
             </div>
         </div>
     </nav>
     <!--HEADER-->
-    <header id="header" style=" font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
-        <div class="container">
+    <header style=" font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+        <div class="container" id="list-phones">
             <div class="row">
                 <div class="col-6">
                     <h2 style="position:relative; left: 145px;">Motorola Moto G5 64Gb</h2>
-                     <!--Carousel-->
+                    <!--Carousel-->
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -75,19 +95,17 @@
                                 <img src="Img/moto2.png" class="d-block w-100" alt="...">
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
-                            data-slide="prev">
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
-                            data-slide="next">
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
                 </div>
-                 <!--Algunas Especificaciones-->
+                <!--Algunas Especificaciones-->
                 <div class="col-6">
                     <ul style="margin-top: 100px; position: relative; right:28px; ">
                         <li>Pantalla 5.8"</li>
@@ -120,42 +138,34 @@
         </div>
     </header>
 
- <!--Section-->
+    <!--Section-->
     <section class="m-5" style=" font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
         <article>
             <nav>
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                            aria-controls="home" aria-selected="true">Descripcion</a>
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Descripcion</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                            aria-controls="profile" aria-selected="false">Especificaciones</a>
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Especificaciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                            aria-controls="contact" aria-selected="false">Comentarios</a>
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Comentarios</a>
                     </li>
                 </ul>
-                 <!--Descripcion-->
+                <!--Descripcion-->
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <img src="Img/moto.png" class="card-image-top m-4">
                         <article style="width: 38%; display: inline-block; text-align: left; margin-left: 150px; ">
                             <h2>Motorola Moto G5</h2>
-                            <p></p>El Moto G5 cuenta con una pantalla Super Retina de 5.8” pulgadas con paneles OLED
-                            personalizados para una pantalla HDR que brinda la mejor precisión en materia de color de la
-                            industria, negros intensos y un brillo increíble. El Face ID avanzado te permite desbloquear
-                            tu Android, ingresar a las aplicaciones y pagar con tan solo una mirada. El chip A12 Bionic
-                            con el procesador Neural Engine​​​​​​​ de última generación usa el aprendizaje automático en
-                            tiempo real para transformar la forma en que experimentas tus fotos, juegos, realidad
-                            aumentada y más. El innovador sistema de cámara dual de 12MP lleva tus retratos al próximo
-                            nivel con el modo Retrato, Iluminación de Retrato, bokeh mejorado y Control de Profundidad
-                            totalmente nuevo.</p>
+                            <p></p>El Moto G5 cuenta con una pantalla Super Retina de 5.8” pulgadas con paneles OLED personalizados para una pantalla HDR que brinda la mejor precisión en materia de color de la industria, negros intensos y un brillo increíble.
+                            El Face ID avanzado te permite desbloquear tu Android, ingresar a las aplicaciones y pagar con tan solo una mirada. El chip A12 Bionic con el procesador Neural Engine​​​​​​​ de última generación usa el aprendizaje automático
+                            en tiempo real para transformar la forma en que experimentas tus fotos, juegos, realidad aumentada y más. El innovador sistema de cámara dual de 12MP lleva tus retratos al próximo nivel con el modo Retrato, Iluminación de Retrato,
+                            bokeh mejorado y Control de Profundidad totalmente nuevo.</p>
                         </article>
                     </div>
-                     <!--Especificaciones-->
+                    <!--Especificaciones-->
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                         <p class="h3 m-4">Especificaciones de productos</p>
                         <div class="m-4">
@@ -195,13 +205,8 @@
                                     <div class="media-body">
                                         <p class="nombre">Jhon Doe <span>7:51pm, Hoy</span></p>
                                         <p class="comentario">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                                            non
-                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                         </p>
                                         <div class="botones text-right">
                                             <a href="#">Responder</a>
@@ -214,18 +219,8 @@
                                             <div class="media-body">
                                                 <p class="nombre">Jhon Doe <span>7:51pm, Hoy</span></p>
                                                 <p class="comentario">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                    eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam,
-                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                    commodo
-                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                                                    esse
-                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                                    cupidatat non
-                                                    proident, sunt in culpa qui officia deserunt mollit anim id est
-                                                    laborum.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                                 </p>
                                                 <div class="botones text-right">
                                                     <a href="#">Responder</a>
@@ -240,18 +235,8 @@
                                             <div class="media-body">
                                                 <p class="nombre">Jhon Doe <span>7:51pm, Hoy</span></p>
                                                 <p class="comentario">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                    eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam,
-                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                    commodo
-                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                                                    esse
-                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                                    cupidatat non
-                                                    proident, sunt in culpa qui officia deserunt mollit anim id est
-                                                    laborum.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                                 </p>
                                                 <div class="botones text-right">
                                                     <a href="#">Responder</a>
@@ -271,27 +256,73 @@
         </article>
     </section>
 
- <!--Espaciado-->
+    <!--Espaciado-->
     <div style="margin-bottom:50px;"></div>
 
-    <footer>
-        <div class="bg-dark" style="height:150px;">footer</div>
-    </footer>
+    <footer class="">
+        <div style="background:#6351ce">
+            <div class="container">
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col-md-6 col-lg-5 text-center-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+                    </div>
+                    <div class="col-md-6 col-lg-5 text-center-md-right mb-4 mb-md-0">
+                        <a class="icons-sm fb-ic ml-0"><i class="fab fa-facebook text-white"></i></a>
+                        <a href="" class="icons-sm tw-ic"><i class="fab fa-twitter-square text-white"></i></a>
+                        <a href="" class="icons-sm gplus-ic"><i class="fab fa-google text-white"></i></a>
+                        <a href="" class="icons-sm li-ic"><i class="fab fa-linkedin text-white"></i></a>
+                        <a href="" class="icons-sm ins-ic"><i class="fab fa-instagram text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!--Espacio hacia Abajo-->
+        <div class="container mt-2 mb-4 text-center text-md-left">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-r">
+                    <h6 class="title font-bold">
+                        <strong>SmartSide</strong>
+                    </h6>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi reprehenderit aut dolor quia consectetur impedit, fuga consequuntur dolorum cum cupiditate? In unde veritatis hi?</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mb-r">
+                    <h6 class="title font-bold">
+                        <strong>Products</strong>
+                    </h6>
+                    <p><a href="#" class="">MDBootstrap</a></p>
+                    <p><a href="#" class="">MDWordPress</a></p>
+                    <p><a href="#" class="">BrandFlow</a></p>
+                    <p><a href="#" class="">Bootstrap Angular</a></p>
+                </div>
 
+                <div class="col-md-3 col-lg-2 col-xl-2 mb-r">
+                    <h6 class="title font-bold">
+                        <strong>Useful Links</strong>
+                    </h6>
+                    <p><a href="#" class="">Your Account</a></p>
+                    <p><a href="#" class="">Become an Affliliate</a></p>
+                    <p><a href="#" class="">Shipping Rates</a></p>
+                    <p><a href="#" class="">Help</a></p>
+                </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+                <div class="col-md-4 col-lg-3 col-xl-3 mb-r">
+                    <h6 class="title font-bold">
+                        <strong>Contact</strong>
+                    </h6>
+                    <p><i class="fas fa-home"></i> New York, NY 10012, US</p>
+                    <p><i class="fas fa-envelope-square"></i> carlosthefather2014@hotmail.com</p>
+                    <p><i class="fas fa-phone-square"></i> 829-943-8830</p>
+                </div>
+
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+                </script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+                </script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+                </script>
+                <script src="js/Carrito.js"></script>
 </body>
 
 </html>
