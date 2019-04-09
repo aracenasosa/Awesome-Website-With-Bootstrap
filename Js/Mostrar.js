@@ -35,9 +35,6 @@ let leerLocalStorage = () => {
    <td>
    <h6>${curso.precio}</h6>
    </td>
-   <td>
-   <a href="#" class="borrar-curso" id="${curso.id}">X</a>
-   </td>
    `;
         lista.appendChild(row);
     })
